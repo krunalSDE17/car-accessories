@@ -1,0 +1,62 @@
+:root {
+  /* Color tokens -- workshop/inventory theme, not a generic SaaS palette */
+  --bg: #F5F5F2;
+  --surface: #FFFFFF;
+  --ink: #161A1F;
+  --ink-soft: #565F6B;
+  --border: #E1DFDA;
+
+  --accent-amber: #E3A008;   /* medium price-level, primary highlights */
+  --accent-blue: #2E4057;    /* primary actions */
+  --accent-blue-hover: #1F2D3D;
+  --danger: #C1443C;         /* high price-level, delete actions */
+  --success: #3A7D5C;        /* low price-level */
+
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--ink);
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input, select {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--accent-amber);
+  color: var(--ink);
+}

@@ -1,0 +1,6 @@
+# Project exclude paths
+/car-accessories-api/target/
+.idea/
+*.iml
+.env
+application-local.properties
